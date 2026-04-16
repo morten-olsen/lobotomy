@@ -1,0 +1,32 @@
+# Wiki index (derived artifact, rebuild with `wiki index`)
+.wiki/
+
+# Python (scoped to tools/)
+tools/.venv/
+tools/__pycache__/
+tools/**/__pycache__/
+tools/**/*.py[cod]
+tools/**/*.egg-info/
+tools/dist/
+tools/build/
+
+# uv
+tools/.python-version
+
+# Obsidian per-device state (not vault config)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/graph.json
+.obsidian/backlink.json
+.obsidian/localstorage.json
+.obsidian/cache
+
+# Embedding model cache
+.models/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Claude Code
+.claude/*.local.json

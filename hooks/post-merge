@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Post-merge hook: re-index the wiki after git pull/merge
+# Install: cp hooks/post-merge .git/hooks/post-merge && chmod +x .git/hooks/post-merge
+
+if command -v uv &> /dev/null; then
+    echo "Lobotomy: re-indexing after merge..."
+    uv run --directory tools lobotomy index 2>/dev/null
+fi

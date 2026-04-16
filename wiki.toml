@@ -1,0 +1,37 @@
+[wiki]
+# Root directory for wiki documents (relative to this file)
+root = "."
+
+# Glob patterns for documents to index
+include = ["**/*.md"]
+
+# Patterns to exclude from indexing
+exclude = [
+    "tools/**",
+    "templates/**",
+    "_templates/**",
+    ".obsidian/**",
+    ".claude/**",
+    ".wiki/**",
+    "node_modules/**",
+    "CLAUDE.md",
+    "README.md",
+]
+
+[index]
+# Path to the SQLite database (relative to this file)
+database = ".wiki/index.db"
+
+[embeddings]
+# Model name (sentence-transformers compatible)
+model = "all-MiniLM-L6-v2"
+
+# Chunk strategy: "heading" (split on markdown headings) or "fixed" (fixed token windows)
+chunk_strategy = "heading"
+
+# Max tokens per chunk (for fixed strategy, or max heading section size)
+max_chunk_tokens = 512
+
+[templates]
+# Directory for note templates
+directory = "templates"

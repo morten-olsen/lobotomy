@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "lobotomy": {
+      "command": "uv",
+      "args": ["run", "--directory", "tools", "lobotomy-mcp"],
+      "cwd": "."
+    }
+  }
+}
